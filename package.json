@@ -1,5 +1,6 @@
 {
-  "homepage": "http://Gerardo999-cachito.github.io/proyectogerardo",
+  "homepage": "https://github.com/Gerardo999-cachito/proyectogerardo.git",
+
   "dependencies": {
     "gh-pages": "^6.2.0",
     "react-scripts": "^5.0.1"

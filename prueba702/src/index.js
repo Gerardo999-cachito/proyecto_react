@@ -2,16 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import ListaDocentes from './Trabajadores/Docente';
 import ListaClientes from './Cliente/Clientecito';
-//import App from './App';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ListaDocentes/>
-    <ListaClientes/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ListaDocentes />} />
+        <Route path="/clientes" element={<ListaClientes />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
